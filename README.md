@@ -17,19 +17,29 @@ We can use spacy very easily for NER tasks. Though often we need to train our ow
 
 There are other libraries as well for performing NER task such as NLTK, coreNLP, Gensim and many more, but as spacy provides a quick and efficient solution to our problem statement, we have used that.
 
-For training the model we have used Resume dataset from Kaggle which contains 220 annotated resume’s.The data contains text and entities with its start and end indexes in the text, which marks its belonging into the text. However, the annotated data is not in the format required in spacy training, so in the first step we have done the model preprocessing to convert the data into the suitable format.
+## **Building custom NER Model steps** 
+
+**(1)** For training the model we have used Resume dataset from Kaggle which contains 220 annotated resume’s.
+
+**(2)** The data contains text and entities with its start and end indexes in the text, which marks its belonging into the text.
+
+**(3)** However, the annotated data is not in the format required in spacy training, so in the first step we have done the model preprocessing to convert the data into the suitable format.
 
 ![image](https://user-images.githubusercontent.com/60917314/216774018-f3298254-db6a-41e1-9864-3a2bae7afd77.png)
 
+## **Creating NER Pipeline**
 
 For training our custom named entity model for resumes we first created a blank spacy model and created a pipeline for NER.
 
 ![image](https://user-images.githubusercontent.com/60917314/216774039-ec26bbdb-9287-4a1b-9b79-32a5767fa8b2.png)
 
+## **Model Training**
+
 We will only train the ner component of the model in the model training, first we will create an example object with the document and annotations and update the model while calculating losses.
 
 ![image](https://user-images.githubusercontent.com/60917314/216774048-c1285011-16bf-459e-b26f-459d621b6eb0.png)
 
+## **Flask API**
 
 To build the custom ner webpage in Flask Framework, we will need to create two files.
 1. ner_home.html which is our template for input and output.
