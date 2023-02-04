@@ -3,7 +3,7 @@
 This project is all about the developing custom NER model using Resume data. I have also developed the Flask API which consumes the model and gives output by using the frontend. 
 
 
-**Custom NER with Flask**
+## **Custom NER with Flask**
 
 Our goal was to build a webform in Flask in which we provide raw text, for example, a person’s data (or any article) as input and our trained custom model will then identify and extract the named entities such as person names, organizations, locations, medical codes, time expressions, quantities, monetary values, percentages, etc. 
 
@@ -45,7 +45,7 @@ Our app.py file is rather simple and easy to understand. It contains the main co
 
 ![image](https://user-images.githubusercontent.com/60917314/216774074-874aa9c2-5d87-47ca-9862-06a7b2c0e053.png)
 
-**References:**
+## **References:**
 
 https://www.analyticsvidhya.com/blog/2021/06/nlp-application-named-entity-recognition-ner-in-python-with-spacy/
 https://towardsdatascience.com/building-a-flask-api-to-automatically-extract-named-entities-using-spacy-2fd3f54ebbc6 
